@@ -20,7 +20,8 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
-
+    implementation("info.picocli:picocli")
+    implementation("io.micronaut.picocli:micronaut-picocli")
 }
 
 
@@ -34,7 +35,7 @@ java {
 
 graalvmNative.toolchainDetection = false
 micronaut {
-    runtime("netty")
+    runtime("none")
     testRuntime("spock2")
     processing {
         incremental(true)

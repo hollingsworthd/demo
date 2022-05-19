@@ -1,2 +1,12 @@
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+    versionCatalogs {
+        "mn" {
+            from("io.micronaut:micronaut-bom:3.4.4")
+        }
+    }
+}
 
 rootProject.name="demo"
